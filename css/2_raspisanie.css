@@ -1,0 +1,85 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 34px;
+    color: #0a3e85;
+    text-align: center;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.container {
+    max-width: 40%;
+    margin: 0 auto;
+}
+.col-left {
+    display: block;
+    width: 43%;
+    float: left;
+}
+.col-right {
+    display: block;
+    width: 43%;
+    float: right;
+}
+.clear{
+	clear: both;
+}
+.table{
+	border-collapse: inherit;
+    border-spacing: 0;
+	-webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.3);
+	width: 100%;
+	min-width: 130px;
+    margin-bottom: 40px;
+}
+.table thead{
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.table thead tr td{
+	border-bottom: 2px solid #fff;
+}
+.table tr td{
+    padding: 7px;
+}
+.table tbody tr td{
+    font-size: 16px;
+    padding: 7px;
+}
+.table-orange{
+	background-color: #f5c040;
+	border: 1px solid #dfc179;
+}
+.table-orange tbody tr td{
+	background-color: #fff4bc;
+    border-bottom: 1px solid #edca70;
+}
+.table-orange tbody tr:last-child td{
+	border-bottom: 0;
+}
+.table-orange tbody tr:nth-child(2n+1) td{
+	background-color: #fadd76;
+}
+.table-green{
+	background-color: #5bd077;
+	border: 1px solid #6ac27f;
+}
+.table-green tbody tr td{
+	background-color: #a3ecb4;
+    border-bottom: 1px solid #6ac27f;
+}
+.table-green tbody tr:last-child td{
+	border-bottom: 0;
+}
+.table-green tbody tr:nth-child(2n+1) td{
+	background-color: #c6ffd0;
+}

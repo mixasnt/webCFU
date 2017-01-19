@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Игра "Палочки"</title>
+   </head>
+   <body>
+      <div class="container">
+      </div>
+		<script>
+		var stick = 25
+
+		var gameStick = {
+			balance: function () {
+				if (stick > 0) {
+					stick = stick - this.a
+					if (stick > 0) {
+						stick = stick - this.b
+						if (stick > 0) {
+							gameStick.readValues()
+						} else {
+							result = 'Конец игры, выиграл человек'
+						}
+					} else {
+						result = 'Конец игры, выиграл компьютер'
+					}
+				}
+				return result
+			},
+
+			readValues: function () {
+				this.a = +prompt('Количество карточек (от 1 до 3):', 0)
+				console.log(this.a)
+				if (this.a >= 1 && this.a <= 3) {
+					this.b = randomInteger(1, 3)
+					gameStick.balance()
+				} else {
+					gameStick.readValues()
+				}
+			}
+		}
+
+		function randomInteger(min, max) {
+			var rand = min + Math.random() * (max - min)
+			rand = Math.round(rand);
+			return rand;
+		}
+
+		gameStick.readValues();
+		alert(gameStick.balance());
+		</script>
+   </body>
+</html>
